@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILDHOOD MEMORIES</title>
+    <style>
+        @font-face {
+            font-family: "The Silver Editorial";
+            src: url("TheSilverEditorial-Regular.ttf") format("truetype");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "The Silver Editorial";
+            src: url("TheSilverEditorial-Italic.ttf") format("truetype");
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        :root {
+            --fundo: #f1f0ed;
+            --texto: #171717;
+            --cinza: #686868;
+            --linha: rgba(23, 23, 23, 0.18);
+            --branco: rgba(255, 255, 255, 0.72);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #ffffff 0, var(--fundo) 55%, #deddd9 100%);
+            color: var(--texto);
+            margin: 0;
+            min-height: 100vh;
+            padding: 32px 20px 48px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: "The Silver Editorial", Georgia, serif;
+        }
+
+        .cabecalho {
+            width: min(100%, 760px);
+            border-top: 1px solid var(--linha);
+            margin-bottom: 18px;
+        }
+
+        .gif-retangular {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 18px;
+            transition: transform 180ms ease;
+        }
+
+        .gif-retangular:hover {
+            transform: scale(1.04);
+        }
+
+        .capa-album {
+            width: min(78vw, 320px);
+            aspect-ratio: 1;
+            object-fit: cover;
+            border: 1px solid var(--texto);
+            box-shadow: 12px 12px 0 var(--texto);
+            display: block;
+            margin: 0 12px 32px 0;
+        }
+
+        .titulo-site {
+            font-size: clamp(2.3rem, 8vw, 5rem);
+            line-height: 0.92;
+            letter-spacing: 0.04em;
+            margin: 0;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .autor {
+            color: var(--cinza);
+            font-size: clamp(1rem, 3vw, 1.35rem);
+            letter-spacing: 0.16em;
+            margin: 14px 0 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .lançamento {
+            border-bottom: 1px solid var(--linha);
+            color: var(--cinza);
+            font-size: 1rem;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            margin: 24px 0 28px;
+            padding-bottom: 18px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .tracklist {
+            background: var(--branco);
+            border: 1px solid var(--linha);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-weight: normal;
+            line-height: 1.65;
+            margin: 0;
+            max-width: 680px;
+            padding: 22px 28px 26px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .tracklist p {
+            border-bottom: 1px solid var(--linha);
+            font-size: 1.35em;
+            margin: 0 0 12px;
+            padding-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .qrcode-wrap {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 34px;
+            text-align: center;
+        }
+
+        .qrcode {
+            color: var(--cinza);
+            font-size: 1.1rem;
+            margin: 0 0 12px;
+        }
+
+        #qrcode {
+            background: #fff;
+            border: 10px solid #fff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: inline-block;
+        }
+
+        marquee {
+            border-bottom: 1px solid var(--linha);
+            border-top: 1px solid var(--linha);
+            margin-top: 42px;
+            max-width: 100%;
+            padding: 8px 0;
+            width: 100%;
+        }
+
+        marquee img {
+            height: 72px;
+            object-fit: contain;
+            width: 240px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 14px 32px;
+            }
+
+            .tracklist {
+                padding: 18px 16px 20px;
+            }
+
+            .capa-album {
+                box-shadow: 8px 8px 0 var(--texto);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+    <div class="textos"></div>
+    </div>
+    <a href="index.html" aria-label="Voltar para a página inicial">
+        <img class="gif-retangular" src="3dlogo-gira.gif" alt="Logo do site">
+    </a>
+    <img class="capa-album" src="capa.album.jfif" alt="Imagem do álbum"> 
+    <h1 class="titulo-site">CHILDHOOD MEMORIES</h1>
+    <h2 class="autor">by DJ LILW4ND</h2>
+    <br>
+    <h3 class="lançamento">Data de Lancamento: 12/10/2026</h3>
+
+    <h4 class="tracklist">
+            <p>Tracklist:</p>
+               1 - Aurora <br>
+               2 - Viagem <br>
+               3 - Parque <br>
+               4 - astronauta (interludio) <br>
+               5 - Memórias feat. Carlos Gabrielos <br>
+               6 - Sonhos Lucidos <br>
+               7 - anoitecer (interludio) <br>
+               8 - Videogame feat. Carlos Gabrielos <br>
+               9 - Dirty Road (ambient mx) feat. hypnno <br>
+               10 - Videogame pt2 <br>
+               11 - ... <br>
+               12 - Paraiso <br>
+               13 - Lembranças feat. Nevue <br>
+               14 - thank you (interludio) <br>
+               15 - Peace <br>
+               16 - lost my child feat. puko snds & vina lin <br>
+               17 - São só memórias 
+    </h4>
+
+    <div class="qrcode-wrap">
+        <p class="qrcode">Qr code do pré-save do meu álbum</p>
+        <div id="qrcode"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://linktr.ee/dj_lilw4nd?utm_source=linktree_profile_share&ltsid=62879ce5-acf0-493c-a47a-70bdf32db1e6",
+            width: 128,
+            height: 128
+        });
+    </script>
+
+    <marquee direction="left" behavior="scroll" scrollamount="5">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+    </marquee>
+</body>
+</html>

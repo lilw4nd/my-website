@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHILDHOOD MEMORIES</title>
+</head>
+<body>
+    <div class="cabecalho">
+    <div class="textos"></div>
+    </div>
+    <a href="index.html" aria-label="Voltar para a página inicial">
+        <img class="gif-retangular" src="3dlogo-gira.gif" alt="Logo do site">
+    </a>
+    <img src="capa.album.jfif" alt="Imagem do álbum" width="200"> 
+    <h1 class="titulo-site">CHILDHOOD MEMORIES</h1>
+    <h2 class="autor">by DJ LILW4ND</h2>
+    <br>
+    <h3 class="lançamento">Data de Lancamento: 12/10/2026</h3>
+
+    <h4 class="tracklist">
+            <p>Tracklist:</p>
+               1 - Aurora <br>
+               2 - Viagem <br>
+               3 - Parque <br>
+               4 - astronauta (interludio) <br>
+               5 - Memórias feat. Carlos Gabrielos <br>
+               6 - Sonhos Lucidos <br>
+               7 - anoitecer (interludio) <br>
+               8 - Videogame feat. Carlos Gabrielos <br>
+               9 - Dirty Road (ambient mx) feat. hypnno <br>
+               10 - Videogame pt2 <br>
+               11 - ... <br>
+               12 - Paraiso <br>
+               13 - Lembranças feat. Nevue <br>
+               14 - thank you (interludio) <br>
+               15 - Peace <br>
+               16 - lost my child feat. puko snds & vina lin <br>
+               17 - São só memórias 
+    </h4>
+
+    <div class="qrcode-wrap">
+        <p class="qrcode">Qr code do pré-save do meu álbum</p>
+        <div id="qrcode"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://linktr.ee/dj_lilw4nd?utm_source=linktree_profile_share&ltsid=62879ce5-acf0-493c-a47a-70bdf32db1e6",
+            width: 128,
+            height: 128
+        });
+    </script>
+
+    <marquee direction="left" behavior="scroll" scrollamount="5">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+        <img src="logo-passando-.png" alt="Logo" width="400">
+    </marquee>
+    <style>
+        @font-face {
+            font-family: "The Silver Editorial";
+            src: url("TheSilverEditorial-Regular.ttf") format("truetype");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "The Silver Editorial";
+            src: url("TheSilverEditorial-Italic.ttf") format("truetype");
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .titulo-site {
+            font-family: "The Silver Editorial", Georgia, serif;
+            margin-bottom: 5px;
+        }
+        .autor {
+            font-family: "The Silver Editorial", Georgia, serif;
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .titulo-site, .autor {
+            font-style: italic;
+        }
+        .tracklist {
+            font-family: "The Silver Editorial", Georgia, serif;
+            font-size: 1.2em;
+            margin-top: 0.1em;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .qrcode {
+            font-family: "The Silver Editorial", Georgia, serif;
+            font-size: 1.2em;
+            margin: 0 auto 10px auto;
+            text-align: center;
+        }
+
+        .qrcode-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #qrcode {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .gif-retangular {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .lançamento {
+            font-family: "The Silver Editorial", Georgia, serif;
+            font-size: 1.2em;
+            margin-top: 0.1em;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</body>
+<style>
+    body {
+        background-color:#f5f5f5ec;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+</html>
