@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <title>Home - Meu site</title>
-</head>
-<body>
-    <img class="logo-da-pagina" src="logo-home-t.png" alt="Descrição da imagem">
-    <h2 class="o-que-sou">Beatmaker/Gamer<h2>
-    <img class="guindaste" src="guindaste-.png" alt="foto do guindaste">
-    <h5 class="bemvindo">Bem vindo ao meu site!</h5>
-    <p class="aviso">Site em construção.</p>
-    <a class="link-sobre" href="sobre-mim.html">Sobre mim</a>
-    <a class="link" href="album-c-m.html">Link para o album</a>
+    <meta charset="UTF-8">
+    <title>Home</title>
 
     <style>
 
-    @font-face {
-        font-family: "The Silver Editorial";
-        src: url("TheSilverEditorial-Italic.ttf") format("truetype");
-    }
+        /* =========================
+           FONTES
+        ========================= */
 
-    @font-face {
-        font-family: "Pixelta";
-        src: url(Pixelta.ttf) format("truetype");
-    }
+        @font-face {
+            font-family: "The Silver Editorial";
+            src: url("TheSilverEditorial-Italic.ttf") format("truetype");
+        }
 
-    @font-face {
-        font-family: "Lukalama";
-        src: url(Lukalama-Regular.otf) format("truetype");
-    }
+        @font-face {
+            font-family: "Pixelta";
+            src: url("Pixelta.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Lukalama";
+            src: url("Lukalama-Regular.otf") format("truetype");
+        }
+
+
+        /* =========================
+           PÁGINA
+        ========================= */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5ec;
+            margin: 20px;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* =========================
+           CONTEÚDO PRINCIPAL
+        ========================= */
+
+        .container {
+            text-align: center;
+        }
+
+
+        /* =========================
+           LOGO + GIFS
+        ========================= */
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
         .logo-da-pagina {
+            width: 400px;
+            height: auto;
+        }
 
-            width: 400px; /* Largura da imagem */
-            height: auto; /* Altura automática para manter a proporção */
-        } 
+        .gif-lado {
+            width: 120px;
+            height: auto;
+        }
+
+
+        /* =========================
+           RESTANTE DO SITE
+        ========================= */
 
         .guindaste {
-            
+            width: 100px;
+            height: 100px;
+        }
+
+        .placa {
             width: 100px;
             height: 100px;
         }
@@ -43,9 +91,8 @@
         .o-que-sou {
             font-family: "Lukalama";
             font-size: 25px;
-            margin-top: 0;
+            margin-top: 10px;
             margin-bottom: 0;
-
         }
 
         .bemvindo {
@@ -58,39 +105,87 @@
         .link {
             font-family: "The Silver Editorial";
             font-size: 25px;
-            margin-top: 0;
-            margin-bottom: 0;
             color: rgb(61, 61, 61);
+            margin: 0 5px;
         }
 
         .link-sobre {
             font-family: "The Silver Editorial";
             font-size: 25px;
-            margin-top: 0;
-            margin-bottom: 0;
             color: rgb(34, 34, 34);
+            margin: 0 5px;
         }
 
         .aviso {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-    </style>
-</body>
- <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5ec;
-            margin: 20px;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            display: flex;
-        }
-        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 16px;
             color: #333;
         }
+
     </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!-- LOGO E GIFS DOS LADOS -->
+        <div class="logo-area">
+
+            <!-- GIF DA ESQUERDA -->
+            <img src="3dlogogirandominha.gif" class="gif-lado" alt="GIF">
+
+            <!-- LOGO DJ LILW4ND -->
+            <img
+                class="logo-da-pagina"
+                src="logo-home-t.png"
+                alt="DJ LILW4ND"
+            >
+
+            <!-- GIF DA DIREITA -->
+            <img src="3dlogogirandominha.gif" class="gif-lado" alt="GIF">
+
+        </div>
+
+
+        <!-- TEXTO -->
+        <h2 class="o-que-sou">Beatmaker/Gamer</h2>
+
+        <h5 class="bemvindo">Bem vindo ao meu site!</h5>
+
+        <p class="aviso">Site em construção.</p>
+
+        <!-- GUINDASTE -->
+        
+        <img
+        class="placa"
+        src="trabalho-.png"
+        alt="foto da placa"
+        >
+        
+        <img
+        class="guindaste"
+        src="guindaste-.png"
+        alt="foto do guindaste"
+        >
+
+        <img
+        class="placa"
+        src="trabalho-.png"
+        alt="foto da placa"
+        >
+
+        <br>
+        <!-- LINKS -->
+        <a class="link-sobre" href="sobre-mim.html">Sobre mim</a>
+        <br>
+        <a class="link" href="album-c-m.html">Link para o album</a>
+
+
+
+    </div>
+
+</body>
+
 </html>
